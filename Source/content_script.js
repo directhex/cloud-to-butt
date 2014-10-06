@@ -31,10 +31,11 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bSJW\b/g, "liberal");
+	v = v.replace(/SJW/g, "liberal");
 	v = v.replace(/\bsjw\b/g, "liberal");
 	v = v.replace(/\bsocial justice warrior\b/g, "liberal");
 	v = v.replace(/\bSocial Justice Warrior\b/g, "liberal");
+	v = v.replace(/\ban liberal\b/g, "a liberal");
 	
 	textNode.nodeValue = v;
 }
